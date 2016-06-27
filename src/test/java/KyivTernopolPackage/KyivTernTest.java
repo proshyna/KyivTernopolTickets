@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class KyivTern {
+public class KyivTernTest {
 
 //  public static  WebDriver driver = new FirefoxDriver();
 
