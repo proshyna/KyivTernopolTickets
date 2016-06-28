@@ -101,7 +101,7 @@ public class TernKyivTest {
         List<String> arrayOfWebElements = getCurrentPeriodTrains();
         //ArrayList creation
         List<String> requeredTrains = new ArrayList<String>();
-        requeredTrains.add("112 Л"); //Putting an Item In arraylist at Index = 0.
+      //  requeredTrains.add("112 Л"); //Putting an Item In arraylist at Index = 0.
         requeredTrains.add("143 Л"); //Putting an Item In arraylist at Index = 1.
         requeredTrains.add("358 Л");
 
