@@ -1,4 +1,4 @@
-package KyivTernopolPackage;
+package TernopolKyivPackage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class KyivTernTest {
+public class TernKyivTest {
 
 //  public static  WebDriver driver = new FirefoxDriver();
 
