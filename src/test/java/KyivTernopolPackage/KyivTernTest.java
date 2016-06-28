@@ -45,17 +45,17 @@ public class KyivTernTest {
             System.out.println("Somthing wrong :(");
         }
         driver.findElement(By.xpath("//ul[@id=\"langs\"]//li[1]//b")).click();
-        driver.findElement(By.name("station_from")).sendKeys("Київ");
+        driver.findElement(By.name("station_from")).sendKeys("Тернопіль");
         try {
-            myDynamicElement.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@title='Київ']")));
+            myDynamicElement.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@title='Тернопіль']")));
         } catch (Exception e) {
             System.out.println("Somthing wrong :(");
         }
         driver.findElement(By.name("station_from")).sendKeys(Keys.DOWN);
         driver.findElement(By.name("station_from")).sendKeys(Keys.ENTER);
-        driver.findElement(By.name("station_till")).sendKeys("Тернопіль");
+        driver.findElement(By.name("station_till")).sendKeys("Київ");
         try {
-            myDynamicElement.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@title='Тернопіль']")));
+            myDynamicElement.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@title='Київ']")));
         } catch (Exception e) {
             System.out.println("Somthing wrong :(");
         }
@@ -101,9 +101,9 @@ public class KyivTernTest {
         List<String> arrayOfWebElements = getCurrentPeriodTrains();
         //ArrayList creation
         List<String> requeredTrains = new ArrayList<String>();
-        requeredTrains.add("049 К"); //Putting an Item In arraylist at Index = 0.
-        requeredTrains.add("081 К"); //Putting an Item In arraylist at Index = 1.
-        requeredTrains.add("143 К");
+        requeredTrains.add("112 Л"); //Putting an Item In arraylist at Index = 0.
+        requeredTrains.add("143 Л"); //Putting an Item In arraylist at Index = 1.
+        requeredTrains.add("358 Л");
 
         List<String> listOfPossibleTrains = new ArrayList<String>();
         for (int i = 0; i < requeredTrains.size(); i++) {
