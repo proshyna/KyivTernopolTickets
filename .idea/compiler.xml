@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="KyivTernopolTickets" />
+        <module name="Ternopol-KyivTickets" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="KyivTernopolTickets" target="1.5" />
+      <module name="Ternopol-KyivTickets" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
