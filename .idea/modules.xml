@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://D://KyivTernopolTickets/KyivTernopolTickets.iml" filepath="D://KyivTernopolTickets/KyivTernopolTickets.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Ternopol-KyivTickets.iml" filepath="$PROJECT_DIR$/.idea/Ternopol-KyivTickets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TernopolKyivTickets.iml" filepath="$PROJECT_DIR$/.idea/TernopolKyivTickets.iml" />
     </modules>
   </component>
 </project>

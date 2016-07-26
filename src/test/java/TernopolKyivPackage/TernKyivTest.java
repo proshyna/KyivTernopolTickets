@@ -62,12 +62,12 @@ public class TernKyivTest {
         driver.findElement(By.name("station_till")).sendKeys(Keys.DOWN);
         driver.findElement(By.name("station_till")).sendKeys(Keys.ENTER);
         driver.findElement(By.id("date_dep")).click();
-        driver.findElement(By.xpath("//td[@data-month='6']//a[text()='3']")).click();
+        driver.findElement(By.xpath("//td[@data-month='6']//a[text()='29']")).click();
         //driver.findElement(By.linkText("7")).click();
 
         try {
             myDynamicElement.until(ExpectedConditions.invisibilityOfElementLocated(
-                    By.xpath("//td[@data-month='6']//a[text()='3']")));
+                    By.xpath("//td[@data-month='6']//a[text()='29']")));
         } catch (Exception e) {
             System.out.println("Somthing wrong :(");
         }
@@ -173,7 +173,7 @@ public class TernKyivTest {
 
                 int placesInt = Integer.parseInt(driver.findElement(By.xpath("//td[@class='num']/a[contains(text(),'"
                         + entry.getKey() + "')]/../..//div[@title='" + carriageType + "' ]/b")).getText());
-                if (placesInt >= 2) {
+                if (placesInt >= 1) {
                     System.out.println(entry.getKey() + " ----> " + carriageType + " = " + placesInt);
 
                    // Tickets obj = new Tickets();
