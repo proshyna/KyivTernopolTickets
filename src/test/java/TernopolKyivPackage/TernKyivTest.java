@@ -104,7 +104,7 @@ public class TernKyivTest {
       //  requeredTrains.add("112 Л"); //Putting an Item In arraylist at Index = 0.
         requeredTrains.add("143 Л"); //Putting an Item In arraylist at Index = 1.
         requeredTrains.add("358 Л");
-        requeredTrains.add("112 Л");
+
 
 
         List<String> listOfPossibleTrains = new ArrayList<String>();
