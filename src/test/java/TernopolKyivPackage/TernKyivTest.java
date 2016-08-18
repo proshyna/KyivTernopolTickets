@@ -182,18 +182,18 @@ public class TernKyivTest {
 
                 int placesInt = Integer.parseInt(driver.findElement(By.xpath("//td[@class='num']/a[contains(text(),'"
                         + entry.getKey() + "')]/../..//div[@title='" + carriageType + "' ]/b")).getText());
-                if (placesInt >= 1) {
+                if (placesInt >= 2) {
                     System.out.println(entry.getKey() + " ----> " + carriageType + " = " + placesInt);
 
                    // Tickets obj = new Tickets();
                     // obj.screenshoting();
+                    driver.quit();
                     sendNotificationOnFacebook();
                     break loop;
                 }
             }
         }
 
-        driver.quit();
     }
 
 
