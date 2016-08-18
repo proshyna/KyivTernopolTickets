@@ -26,7 +26,7 @@ public class TernKyivTest {
     @Test
     public void testTicket(){
         System.setProperty("webdriver.chrome.driver", "D:\\SeleniumTest\\chromedriver_win32\\chromedriver.exe");
-        driver = new ChromeDriver();
+       // driver = new ChromeDriver();
 
         filters();
         getCurrentPeriodTrains();
@@ -36,7 +36,7 @@ public class TernKyivTest {
     }
 
     private static void filters() {  // Searching for trains with defined filters
-
+        closingMassages();
         WebDriverWait myDynamicElement = new WebDriverWait(driver, 30);
         driver.navigate().to("http://booking.uz.gov.ua/");
         try {
@@ -85,6 +85,13 @@ public class TernKyivTest {
         }
     }
 
+    private static void closingMassages(){
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-extensions");
+        driver = new ChromeDriver(options);
+    }
+
     private static List<String> getCurrentPeriodTrains() { // Getting WebElements and writing them to ArrayList
         List<String> currentTrains = new ArrayList<String>();
         List<WebElement> myElements = driver.findElements(By.xpath("//table[@id='ts_res_tbl']//td[@class='num']//a"));
@@ -104,6 +111,8 @@ public class TernKyivTest {
       //  requeredTrains.add("112 Л"); //Putting an Item In arraylist at Index = 0.
         requeredTrains.add("143 Л"); //Putting an Item In arraylist at Index = 1.
         requeredTrains.add("358 Л");
+        requeredTrains.add("112 Л");
+        requeredTrains.add("081 Л");
 
 
 
@@ -173,7 +182,7 @@ public class TernKyivTest {
 
                 int placesInt = Integer.parseInt(driver.findElement(By.xpath("//td[@class='num']/a[contains(text(),'"
                         + entry.getKey() + "')]/../..//div[@title='" + carriageType + "' ]/b")).getText());
-                if (placesInt >= 2) {
+                if (placesInt >= 1) {
                     System.out.println(entry.getKey() + " ----> " + carriageType + " = " + placesInt);
 
                    // Tickets obj = new Tickets();
@@ -202,13 +211,13 @@ public class TernKyivTest {
         WebDriverWait myDynamicElement = new WebDriverWait(driver, 30);
         driver.navigate().to("https://www.facebook.com/");
         try {
-            myDynamicElement.until(ExpectedConditions.visibilityOfElementLocated(By.id("u_0_j")));
+            myDynamicElement.until(ExpectedConditions.visibilityOfElementLocated(By.id("u_0_l")));
         } catch (Exception e) {
             System.out.println("Somthing wrong1 :(");
         }
         driver.findElement(By.id("email")).sendKeys("chizdrel@ya.ru");
         driver.findElement(By.id("pass")).sendKeys("Greenice123@");
-        driver.findElement(By.id("u_0_m")).click();
+        driver.findElement(By.id("u_0_l")).click();
 
 
         try {
