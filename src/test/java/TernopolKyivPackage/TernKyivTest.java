@@ -62,12 +62,12 @@ public class TernKyivTest {
         driver.findElement(By.name("station_till")).sendKeys(Keys.DOWN);
         driver.findElement(By.name("station_till")).sendKeys(Keys.ENTER);
         driver.findElement(By.id("date_dep")).click();
-        driver.findElement(By.xpath("//td[@data-month='7']//a[text()='21']")).click();
+        driver.findElement(By.xpath("//td[@data-month='8']//a[text()='18']")).click();
         //driver.findElement(By.linkText("7")).click();
 
         try {
             myDynamicElement.until(ExpectedConditions.invisibilityOfElementLocated(
-                    By.xpath("//td[@data-month='7']//a[text()='21']")));
+                    By.xpath("//td[@data-month='8']//a[text()='18']")));
         } catch (Exception e) {
             System.out.println("Somthing wrong :(");
         }
@@ -112,7 +112,7 @@ public class TernKyivTest {
         requeredTrains.add("143 Л"); //Putting an Item In arraylist at Index = 1.
         requeredTrains.add("358 Л");
         requeredTrains.add("112 Л");
-        requeredTrains.add("081 Л");
+       // requeredTrains.add("081 Л");
 
 
 
