@@ -134,7 +134,7 @@ public class TernKyivTest {
 
     private static List<String> preparingDesiredTypesOfCarraige() {
         List<String> trainsDesiredTypes = new ArrayList<String>();
-       // trainsDesiredTypes.add("Купе");
+        trainsDesiredTypes.add("Купе");
         trainsDesiredTypes.add("Плацкарт");
         for (int t = 0; t < trainsDesiredTypes.size(); t++) {
             //  System.out.println(trainsDesiredTypes.get(t1));
